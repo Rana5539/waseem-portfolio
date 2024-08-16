@@ -13,7 +13,7 @@ function Project2() {
       duration: 1000, 
     });
   }, []);
-  const project = 'https://build2-nu.vercel.app/'
+  const project = 'https://plants-website-nu.vercel.app/'
   const onClick = () => {
     window.open(project, '_blank');
   };
@@ -55,13 +55,13 @@ function Project2() {
             fontFamily:'Poppins', 
             fontWeight:'300', 
             mt:2,ml:2, 
-            fontSize:'18px'}}>Real Estate</Typography>
+            fontSize:'18px'}}>Plants's Website</Typography>
             <Typography sx={{
               color:'grey', 
               fontFamily:'Inria Sans',
               ml:2, 
-              fontSize:'13px'}}>Under development</Typography>
-              <Typography sx={{color:'whitesmoke', fontFamily:'Poppins', fontWeight:'300', ml:2, fontSize:'15px'}}>It is a Real Estate project where you can buy and sell your property on the other hand you can avail many services. </Typography>
+              fontSize:'13px'}}>Feb 2023</Typography>
+              <Typography sx={{color:'whitesmoke', fontFamily:'Poppins', fontWeight:'300', ml:2, fontSize:'15px'}}>Frontend of a plant website to showcase the varities of plants and provide services </Typography>
               <Box sx={{m:'auto', display:'flex', justifyContent:'space-evenly',mt:2}}>
               {data.map((a)=>(
                 <Box sx={{ 

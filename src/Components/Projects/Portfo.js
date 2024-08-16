@@ -9,6 +9,9 @@ const data = [{text:'React js'},
 {text:'Material UI'},
 {text:'JavaScript'}
 ]
+const project = 'https://apnimanzil.com/home?type=Residential&city=Lahore&availableFor=Buy%2CSold'
+const onClick = () => {
+  window.open(project, '_blank');}
 const style = {
   position: 'absolute',
   top: '40%',
@@ -28,9 +31,7 @@ function Portfo() {
       duration: 1000, 
     });
   }, []);
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+ 
   return (
     <>
     <div data-aos='flip-right'>
@@ -56,7 +57,7 @@ function Portfo() {
             transform: 'translateY(-10px)'
            
           },}}
-          onClick={handleOpen}
+          onClick={onClick}
         ><Box sx={{
             width:"90%", 
             m:'auto', 
@@ -100,21 +101,7 @@ function Portfo() {
             </Box>
         <Project3/>
     </Box>
-    <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2" sx={{fontFamily:'Poppins',color:'white'}}>
-            Portfolio
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2, fontFamily:'Inria Sans',color:'white'}}>
-            This project is currently you are observing that is my personal portfolio and the other mentioned project is under development.
-          </Typography>
-        </Box>
-      </Modal></div>
+ </div>
     </>
   )
 }
