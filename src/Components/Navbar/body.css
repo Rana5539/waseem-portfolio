@@ -1,0 +1,8 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background: linear-gradient(to right, rgb(5, 14, 49) , black );
+}
+.bg{
+    background-image: url(/src//Components/me.jpeg);
+}
